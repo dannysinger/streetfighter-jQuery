@@ -8,3 +8,11 @@ body{
     margin-top:10%;
     margin-bottom:10%;
 }
+.default{
+    margin-left:20%;
+    display:block;
+}
+.Ryu-Ready{
+    margin-left:20%;
+    display:none;
+}

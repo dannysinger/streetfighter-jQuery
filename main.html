@@ -10,6 +10,10 @@
 </head>
 <body>
     <section class="main-window">
+        <img src="images/ryu-standing-still.png" class="default">
+        <img src="images/ryu-ready-position.gif" class="Ryu-Ready">
+        
+    
     <!--INTRO-->
         Play Music +  -Fade Street fighter logo 3s 
                       -Fade Brought to you by Big Red
@@ -22,9 +26,11 @@
     
     <script>
         $(document).ready(function() {
-            $(default).mouseenter(function() {
-                css("display", "none");
-            }
+            $(".default").mouseenter(function() {
+                $(".default").css("display", "none");
+                $(".Ryu-Ready").css("display", "block");
+            });
+        }); 
     </script>
     
     </section>
