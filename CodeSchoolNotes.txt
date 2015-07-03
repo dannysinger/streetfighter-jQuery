@@ -1,0 +1,57 @@
+LISTS FROM ANCESTRAL PRICE DATA "closest"
+        
+var amount = ("<p> Only $"+price+" </p>");
+    
+    D. Simplify
+    
+        Let x be the closest list element ancestor, 
+        
+        var price = x.data("price");
+        
+        x.append(price)... The action step after the newly coded custom price.
+
+Here I think we are only saying "When buttons are clicked that either have class x or are children of class x (ie list item)... We could also be dealing with a double class situation. 
+
+    $(".x").on("click", "button", function() {};)
+
+        
+FILTERS Say we have two filtering buttons ".onsale-filter" ".expiring-filter" within #filters. 
+
+    $("#filters").on("click", ".onsale-filter", function() {});
+
+So notice the specificity above delineated by the "If I click x that is part of y" syntax... 
+    
+    Now we want to select the corresponding elements we want filtered according     to the activation of the above filter command units. 
+    
+    INSIDE THE FUNCTION THIS HAPPENS:
+    
+    $("vacation").filter(".onsale") .... filter only those with double class        <="vacation onsale>
+    
+    ADD A CLASS: 
+    
+    $("vacation").filter(".onsale").addClass("highlighted");
+    
+    LISTEN FOR CLICKS ON EXPIRING FILTER (in div.#filters)
+    
+    $("#filters").on("click", ".expiring-filter", function() {});
+    
+    CLEARING ALL HIGHLIGHTS BEFORE APPLYING TARGETED HIGHLIGHTS
+    
+    INSIDE FUNCTION $("highlighted").removeClass("highlighted");
+    
+RE-TRAINING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Double classes <li class="vacation onsale" data="399.99"$>
+
+$("#filters").on("click", ".onsale-filter", function(){});
+
+DOUBLE CLASS
+
+$(".vacation").filter(".onsale").addClass("highlighted");
+
+
+        
+
+    
+
+
