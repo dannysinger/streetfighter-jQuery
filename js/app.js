@@ -33,11 +33,11 @@ $(document).ready(function(){
     })  
     //When mousedown on RyuDiv?, Show Ryu Throw    
     .mousedown(function() {
-        $(".RyuStandingStill").hide()
+        $(".RyuStandingStill").hide()   
         $(".RyuReadyPose").hide()
         $(".RyuThrow").show()
         $(".Hadouken").show()
-        //$(".Hadouken").animate({ "left": "=-200px"}, "fast");
+        $(".Hadouken").animate({ marginLeft: "+=200px" }, "fast")
     })
     //When mouseup, back to default
     .mouseup(function() {
