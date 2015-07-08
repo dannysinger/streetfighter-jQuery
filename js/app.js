@@ -20,28 +20,30 @@
     - There is an order and stacking context for positioned and floated etc.          etc. etc.*/
                   
 $(document).ready(function(){
+    $(".RyuDiv")
     //When drag mouse on RyuStandingStill
-    $(".RyuDiv").mouseenter(function() {
-        $(".RyuReadyPose").css("display", "block");
-        $(".RyuStandingStill").css("display", "none");
-    });
+    .mouseenter(function() {
+        $(".RyuReadyPose").show()
+        $(".RyuStandingStill").hide()
+    })
     //When mouseleaves RyuReadyPose
-    $(".RyuDiv").mouseleave(function() {
-        $(".RyuStandingStill").css("display", "block");
-        $(".RyuReadyPose").css("display", "none");
-    });
-    //When mousedown on RyuDiv?, Show Ryu Throw
-    $(".RyuDiv").mousedown(function() {
-        $(".RyuStandingStill").css("display", "none");
-        $(".RyuReadyPose").css("display", "none");
-        $(".RyuThrow").css("display", "block");
-        $(".Hadouken").css("display", "block");
-        $(".Hadouken").animate({ "left": "=-200px"}, "fast");
-    });
-    $("RyuDiv").mouseup(function() {
-        $(".RyuStandingStill").css("display", "block");
-        $(".RyuReadyPose").css("display", "none");
-        $(".RyuThrow").css("display", "none");
-    });
+    .mouseleave(function() {
+        $(".RyuStandingStill").show()
+        $(".RyuReadyPose").hide()
+    })  
+    //When mousedown on RyuDiv?, Show Ryu Throw    
+    .mousedown(function() {
+        $(".RyuStandingStill").hide()
+        $(".RyuReadyPose").hide()
+        $(".RyuThrow").show()
+        $(".Hadouken").show()
+        //$(".Hadouken").animate({ "left": "=-200px"}, "fast");
+    })
+    //When mouseup, back to default
+    .mouseup(function() {
+        $(".RyuStandingStill").show()
+        $(".RyuReadyPose").hide()
+        $(".RyuThrow").hide()
+    })
 });
                 
