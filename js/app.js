@@ -23,27 +23,27 @@ $(document).ready(function(){
     $(".RyuDiv")
     //When drag mouse on RyuStandingStill
     .mouseenter(function() {
-        $(".RyuReadyPose").show()
-        $(".RyuStandingStill").hide()
+        $(".RyuReadyPose").show();
+        $(".RyuStandingStill").hide();
     })
     //When mouseleaves RyuReadyPose
     .mouseleave(function() {
-        $(".RyuStandingStill").show()
-        $(".RyuReadyPose").hide()
-    })  
+        $(".RyuStandingStill").show();
+        $(".RyuReadyPose").hide();
+    })
     //When mousedown on RyuDiv?, Show Ryu Throw    
     .mousedown(function() {
-        $(".RyuStandingStill").hide()   
-        $(".RyuReadyPose").hide()
-        $(".RyuThrow").show()
-        $(".Hadouken").show()
-        $(".Hadouken").animate({ marginLeft: "+=200px" }, "fast")
+        $(".RyuStandingStill").hide();   
+        $(".RyuReadyPose").hide();
+        $(".RyuThrow").show();
+        $(".Hadouken").show();
+        $(".Hadouken").animate({ marginLeft: "+=200px" }, "fast");
     })
     //When mouseup, back to default
     .mouseup(function() {
-        $(".RyuStandingStill").show()
-        $(".RyuReadyPose").hide()
-        $(".RyuThrow").hide()
-    })
+        $(".RyuStandingStill").show();
+        $(".RyuReadyPose").hide();
+        $(".RyuThrow").hide();
+    });
 });
                 

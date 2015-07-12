@@ -15,7 +15,7 @@ Here I think we are only saying "When buttons are clicked that either have class
     $(".x").on("click", "button", function() {};)
 
         
-FILTERS Say we have two filtering buttons ".onsale-filter" ".expiring-filter" within #filters. 
+FILTERS ("EVENT DELEGATION") Say we have two filtering buttons ".onsale-filter" ".expiring-filter" within #filters. 
 
     $("#filters").on("click", ".onsale-filter", function() {});
 
